@@ -1,9 +1,17 @@
-# Getting Started with Create React App
+# Frontend React E-commerce
+*Front-End: Este é o repositório do frontend React para uma aplicação de e-commerce utilizando o Ant Design como biblioteca de componentes. O objetivo deste projeto é fornecer uma interface de usuário moderna e intuitiva para os clientes realizarem compras de produtos.*
 
+## Requisitos Front-End
+- React
+- Redux
+- Ant Design
+- Node.js
+
+
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
 
 ## Available Scripts
-
 In the project directory, you can run:
 
 ### `npm start`

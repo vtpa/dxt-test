@@ -3,9 +3,6 @@
 
 ### Informações
 
-## Regras de Negócios
-- [ ] 
-
 ## Requisitos Funcionais
 - [x] Deve ser possível criar um novo produto com base nos dados fornecidos.
 - [x] Deve ser possível obter os detalhes de um produto com base em seu ID.
@@ -36,4 +33,4 @@
 
 - orders
   - id
-  - product[]
+  - products[]

@@ -57,6 +57,3 @@ Siga as etapas abaixo para implantar a aplicação:
 
 Trabalhe criando os testes automatizados e deixe o comando `npm test` para realizar os testes. Certifique-se de configurar um ambiente de teste adequado antes de executar os testes.
 
-## Duvidas
-
-rodrigo.jean@dex.co ou rodrigo.jean@duratex.com.br 
