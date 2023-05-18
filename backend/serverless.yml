@@ -1,0 +1,57 @@
+service: dxc-test-sls-backend
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'us-east-1'}
+  memorySize: 128
+  timeout: 3
+
+functions: 
+  create-product:
+    handler: src/http/controllers/products/register.register
+    description: Function to create a new product
+    events:
+      - httpApi:
+          path: /products
+          method: post
+  list-products:
+    handler: src/http/controllers/products/list.list
+    description: Function to list all products
+    events:
+      - httpApi:
+          path: /products
+          method: get
+  get-product:
+    handler: src/http/controllers/products/getById.getById
+    description: Function to get a product by id
+    events:
+      - httpApi:
+          path: /products/{id}
+          method: get
+  update-product:
+    handler: src/http/controllers/products/update.update
+    description: Function to update a product
+    events:
+      - httpApi:
+          path: /products/{id}
+          method: put
+  delete-product:
+    handler: src/http/controllers/products/delete.deleteFunction
+    description: Function to delete a product
+    events:
+      - httpApi:
+          path: /products/{id}
+          method: delete
+  register-order:
+    handler: src/http/controllers/orders/register.register
+    description: Function create a new order
+    events:
+      - httpApi:
+          path: /orders
+          method: post
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-typescript
