@@ -1,0 +1,33 @@
+.head {
+  width: 100%;
+  background-color: #001529;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+}
+
+.title {
+  color: #FFF;
+  font-weight: 500;
+}
+
+.cardIcon {
+  color: #FFF;
+  font-size: 36px;
+}
+
+.cartRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productTitle {
+  margin-right: 16px;
+}
